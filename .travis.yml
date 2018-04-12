@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - 'stable'
+before_script:
+  - npm install -g @angular/cli
+script:
+  - npm run prod
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: xFK4gU7xb9YKw91a8fZoSg
+  local_dir: dist
+  on:
+    branch: master
