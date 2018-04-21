@@ -2,13 +2,13 @@
 <h1>
   Welcome to my app
 </h1>
-
+<h2>
+  The meteo today is : 
+</h2>
 <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-   <h1>{{town.name | uppercase}}</h1>
+    <h1>{{town.name | uppercase}}</h1>
+    <h1><i class="wi wi-forecast-io-{{town.icon}}"></i>  {{town.temperature}}°F</h1>
   </mat-card-header>
 </mat-card>
-  <mat-card-content>
-    <p><i class="wi wi-forecast-io-{{town.icon}}"></i>  {{town.temperature-32}}°C</p>
-  </mat-card-content>

@@ -7,6 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   selector: 'app-meteo',
   templateUrl: './meteo.component.html',
   styleUrls: ['./meteo.component.css'],
+  providers: [TownService]
 })
 export class MeteoComponent implements OnInit {
   town: Town;
